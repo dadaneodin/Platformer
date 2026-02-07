@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d74062e4bfc0ca946b85d96b43f70bdc
+guid: ee18c7c8b5d45264ba739c9676aad8a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier-Idle_0
+      name: IDLE_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 43
-        width: 15
-        height: 18
+        x: 36
+        y: 15
+        width: 22
+        height: 34
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b962443df973c624a8da101ee36227a5
-      internalID: -1314549764
+      spriteID: 7b3997982b63330429bda46c36f79320
+      internalID: 1532290600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_1
+      name: IDLE_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 43
-        width: 15
-        height: 18
+        x: 132
+        y: 15
+        width: 22
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce32b94703f4b39469b06675da396855
-      internalID: 1984264943
+      spriteID: 9d22342d489d4194f9cca8cc3749ad11
+      internalID: -2073891943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_2
+      name: IDLE_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 43
-        width: 15
-        height: 19
+        x: 228
+        y: 15
+        width: 22
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3485531b5fcd32c4eb028d14b0bb654c
-      internalID: -1623046321
+      spriteID: c9b3d754b55a8ac4ea70cec614892749
+      internalID: 1239159776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_3
+      name: IDLE_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 43
-        width: 15
-        height: 19
+        x: 324
+        y: 15
+        width: 22
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46310bd7c42ae245905ca8be715c0b0
-      internalID: -366219206
+      spriteID: 92a44b3f700796844b8a91cb87b0926d
+      internalID: -2067191746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_4
+      name: IDLE_4
       rect:
         serializedVersion: 2
-        x: 441
-        y: 43
-        width: 15
-        height: 18
+        x: 419
+        y: 15
+        width: 22
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb96e0e6bf006c4eaabc1448de088ce
-      internalID: 180739739
+      spriteID: f8519798930cb174bb10c164778c12d3
+      internalID: -1603449470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_5
+      name: IDLE_5
       rect:
         serializedVersion: 2
-        x: 541
-        y: 43
-        width: 15
-        height: 18
+        x: 514
+        y: 15
+        width: 22
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275c832204be4df44b603c3154d68212
-      internalID: -1162257029
+      spriteID: be478912e87a53544813d673d952b812
+      internalID: 538715464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 15
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3431a7dedcd038c44af791cff2b224e2
+      internalID: 692027873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 15
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2b00727986b4b4ba37a4519b3914af
+      internalID: 1481582560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 15
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e72236dd11dc90408ac221b983fcff6
+      internalID: 244285588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 15
+        width: 22
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db26f8caea270c143a0424bc836d2852
+      internalID: -19045520
       vertices: []
       indices: 
       edges: []
@@ -246,12 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Soldier-Idle_0: -1314549764
-      Soldier-Idle_1: 1984264943
-      Soldier-Idle_2: -1623046321
-      Soldier-Idle_3: -366219206
-      Soldier-Idle_4: 180739739
-      Soldier-Idle_5: -1162257029
+      IDLE_0: 1532290600
+      IDLE_1: -2073891943
+      IDLE_2: 1239159776
+      IDLE_3: -2067191746
+      IDLE_4: -1603449470
+      IDLE_5: 538715464
+      IDLE_6: 692027873
+      IDLE_7: 1481582560
+      IDLE_8: 244285588
+      IDLE_9: -19045520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

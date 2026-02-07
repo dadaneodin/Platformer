@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d74062e4bfc0ca946b85d96b43f70bdc
+guid: 79a44d9eda814dc4b8861da8b01ae26c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,127 +110,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier-Idle_0
+      name: ATTACK 1_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 43
+        y: 15
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b962443df973c624a8da101ee36227a5
-      internalID: -1314549764
+      spriteID: fafd13f5ded772344a67a60cddd7669c
+      internalID: 1719065271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_1
+      name: ATTACK 1_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 138
+        y: 15
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce32b94703f4b39469b06675da396855
-      internalID: 1984264943
+      spriteID: 16ce5dc62a77145449e1ba8131cab994
+      internalID: -1087006152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_2
+      name: ATTACK 1_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 43
-        width: 15
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 234
+        y: 15
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3485531b5fcd32c4eb028d14b0bb654c
-      internalID: -1623046321
+      spriteID: 9a7f65fba31b40e46a3fc83da543354f
+      internalID: -1913782693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_3
+      name: ATTACK 1_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 43
-        width: 15
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 330
+        y: 15
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46310bd7c42ae245905ca8be715c0b0
-      internalID: -366219206
+      spriteID: ce46f8c1b4d6b724c9ae9771d7dbd66a
+      internalID: 1058497174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_4
+      name: ATTACK 1_4
       rect:
         serializedVersion: 2
-        x: 441
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 421
+        y: 14
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb96e0e6bf006c4eaabc1448de088ce
-      internalID: 180739739
+      spriteID: be3181261743faf4287ed3694f916f2d
+      internalID: -290425408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_5
+      name: ATTACK 1_5
       rect:
         serializedVersion: 2
-        x: 541
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 516
+        y: 15
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275c832204be4df44b603c3154d68212
-      internalID: -1162257029
+      spriteID: 342f8de4222088a4588f9f84b9dc151f
+      internalID: -1568425041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATTACK 1_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 15
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e473a63b27d324eb1322099f121fc3
+      internalID: 1262750070
       vertices: []
       indices: 
       edges: []
@@ -246,12 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Soldier-Idle_0: -1314549764
-      Soldier-Idle_1: 1984264943
-      Soldier-Idle_2: -1623046321
-      Soldier-Idle_3: -366219206
-      Soldier-Idle_4: 180739739
-      Soldier-Idle_5: -1162257029
+      ATTACK 1_0: 1719065271
+      ATTACK 1_1: -1087006152
+      ATTACK 1_2: -1913782693
+      ATTACK 1_3: 1058497174
+      ATTACK 1_4: -290425408
+      ATTACK 1_5: -1568425041
+      ATTACK 1_6: 1262750070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

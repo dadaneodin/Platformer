@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d74062e4bfc0ca946b85d96b43f70bdc
+guid: b23fa945f93d76246960a64c8a3b091a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,127 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier-Idle_0
+      name: HURT_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 35
+        y: 15
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b962443df973c624a8da101ee36227a5
-      internalID: -1314549764
+      spriteID: c13178b898534824282ae9f556a96bf2
+      internalID: -361979230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_1
+      name: HURT_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 131
+        y: 15
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce32b94703f4b39469b06675da396855
-      internalID: 1984264943
+      spriteID: 46098845d3a81834e83711c867e5d3ef
+      internalID: 314024617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_2
+      name: HURT_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 43
-        width: 15
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 228
+        y: 15
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3485531b5fcd32c4eb028d14b0bb654c
-      internalID: -1623046321
+      spriteID: e9807cdfed3700242b83c9139289ec7f
+      internalID: -1023359253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier-Idle_3
+      name: HURT_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 43
-        width: 15
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 325
+        y: 15
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46310bd7c42ae245905ca8be715c0b0
-      internalID: -366219206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soldier-Idle_4
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdb96e0e6bf006c4eaabc1448de088ce
-      internalID: 180739739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Soldier-Idle_5
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 43
-        width: 15
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 275c832204be4df44b603c3154d68212
-      internalID: -1162257029
+      spriteID: 30a991f2740ba1247966b47722a35fa6
+      internalID: 2064783401
       vertices: []
       indices: 
       edges: []
@@ -246,12 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Soldier-Idle_0: -1314549764
-      Soldier-Idle_1: 1984264943
-      Soldier-Idle_2: -1623046321
-      Soldier-Idle_3: -366219206
-      Soldier-Idle_4: 180739739
-      Soldier-Idle_5: -1162257029
+      HURT_0: -361979230
+      HURT_1: 314024617
+      HURT_2: -1023359253
+      HURT_3: 2064783401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
