@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class Health : MonoBehaviour
     [SerializeField] private float currentHealth;
     [SerializeField] private bool isAlive;
     [SerializeField] private GameObject person;
+    [SerializeField] public Image healthBarImage;
+    [SerializeField]public Image fillAmount;
 
     private void Awake()
     {
@@ -37,4 +40,6 @@ public class Health : MonoBehaviour
             Destroy(person);
 
     }
+
+   
 }
