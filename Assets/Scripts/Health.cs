@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro; 
 
 public class Health : MonoBehaviour
 {
@@ -8,7 +9,14 @@ public class Health : MonoBehaviour
     [SerializeField] private bool isAlive;
     [SerializeField] private GameObject person;
     [SerializeField] public Image healthBarImage;
-    [SerializeField]public Image fillAmount;
+    [SerializeField] public TMP_Text healthText;
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private GameObject deathPanel;
+
+    private void Update()
+    {
+        UpdateHealth(currentHealth, maxHealth);
+    }
 
     private void Awake()
     {
@@ -19,6 +27,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        UpdateHealth(currentHealth, maxHealth);
         CheckIsAlive();
     }
 
@@ -31,15 +40,20 @@ public class Health : MonoBehaviour
                 isAlive = false;
                 Death();
             }
-
     }
 
     private void Death()
     {
         if(isAlive == false)
             Destroy(person);
-
+        deathPanel.SetActive(true);
     }
 
-   
+    void UpdateHealth(float currentHealth, float maxHealth)
+    {
+        healthBarImage.fillAmount = currentHealth / maxHealth;
+        healthText.text = currentHealth.ToString();
+    }
+
+    
 }
