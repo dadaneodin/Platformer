@@ -6,11 +6,21 @@ public class DamageDealer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Damageable"))
+        if(collision.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            Destroy(gameObject);
+            return;
         }
 
-        Destroy(gameObject);
+        if(collision.CompareTag("Damageable"))
+        {
+            Health health = collision.gameObject.GetComponent<Health>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+
     }
 }

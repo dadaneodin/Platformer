@@ -10,7 +10,6 @@ public class Health : MonoBehaviour
     [SerializeField] private GameObject person;
     [SerializeField] public Image healthBarImage;
     [SerializeField] public TMP_Text healthText;
-    [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject deathPanel;
 
     private void Update()
@@ -44,9 +43,15 @@ public class Health : MonoBehaviour
 
     private void Death()
     {
-        if(isAlive == false)
+         if(person != null)
             Destroy(person);
-        deathPanel.SetActive(true);
+            
+        if(deathPanel != null)
+            deathPanel.SetActive(true);
+
+        // if(isAlive == false)
+        //     Destroy(person);
+        // deathPanel.SetActive(true);
     }
 
     void UpdateHealth(float currentHealth, float maxHealth)
