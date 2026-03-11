@@ -17,15 +17,6 @@ public class SamuraiAnimation : MonoBehaviour
         bool isRunning = Mathf.Abs(moveInput) > 0.1f;
         anim.SetBool("isRunning", isRunning);
         
-    //    if (moveInput != 0)
-    //     {
-    //         transform.localScale = new Vector3(
-    //             Mathf.Sign(moveInput),
-    //             transform.localScale.y,
-    //             transform.localScale.z
-    //         );
-    //     }
-        
         if (moveInput != 0)
         {
             transform.rotation = Quaternion.Euler(0, 
@@ -37,5 +28,17 @@ public class SamuraiAnimation : MonoBehaviour
             anim.SetBool("isShooting", true);
         if (Input.GetButtonUp("Fire1"))
             anim.SetBool("isShooting", false);
+    }
+
+     public void TakeDamage()
+    {
+        anim.SetBool("isHurting", true);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Damageable"))
+        {
+            TakeDamage();
+        }
     }
 }

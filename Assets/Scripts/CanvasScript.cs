@@ -16,6 +16,6 @@ public class CanvasScript : MonoBehaviour
     }
     void jopa()
     {
-        canvas.gameObject.transform.rotation = Quaternion.
+        canvas.gameObject.transform.rotation = Quaternion.identity;
     }
 }
