@@ -22,20 +22,33 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
+        if(currentTimeToRevert >= TimeToRevert)
+        {
+            currentTimeToRevert = 0;
+            currentState = REVERT_STATE;
+        }
         switch(currentState)
         {
             case IDLE_STATE:
+                currentTimeToRevert += Time.deltaTime;
                 break;
             case WALK_STATE:
+                rb.velocity = Vector2.left * Speed;
                 break;
             case REVERT_STATE:
+                sp.flipX = !sp.flipX;
+                Speed *= -1;
+                currentState = WALK_STATE;
                 break;
         }
+        
+        anim.SetFloat("Velocity", rb.velocity.magnitude);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("EnemyStopper"))
             currentState = IDLE_STATE;
+            rb.velocity = Vector2.zero;
     }
 }

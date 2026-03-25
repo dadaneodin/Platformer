@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Damageable
+  - EnemyStopper
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 705371955
+    locked: 0
+  - name: Canvas
+    uniqueID: 714990399
     locked: 0
