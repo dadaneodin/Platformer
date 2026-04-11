@@ -6,12 +6,17 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private float currentHealth;
-    [SerializeField] private bool isAlive;
+    [SerializeField] public bool isAlive;
     [SerializeField] private GameObject person;
     [SerializeField] public Image healthBarImage;
     [SerializeField] public TMP_Text healthText;
     [SerializeField] private GameObject deathPanel;
 
+
+    void Start()
+    {
+        
+    }
     private void Update()
     {
         UpdateHealth(currentHealth, maxHealth);
@@ -30,7 +35,7 @@ public class Health : MonoBehaviour
         CheckIsAlive();
     }
 
-    private void CheckIsAlive()
+    public void CheckIsAlive()
     {
         if(currentHealth > 0)
             isAlive = true;
@@ -45,19 +50,31 @@ public class Health : MonoBehaviour
     {
          if(person != null)
             Destroy(person);
-            
+
         if(deathPanel != null)
             deathPanel.SetActive(true);
+        // else
+        //     deathPanel.SetActive(false);
 
-        // if(isAlive == false)
-        //     Destroy(person);
-        // deathPanel.SetActive(true);
+
+        if(isAlive == false)
+        {
+            Destroy(person);
+            // deathPanel.SetActive(true);
+            Die();
+        }
     }
 
     void UpdateHealth(float currentHealth, float maxHealth)
     {
         healthBarImage.fillAmount = currentHealth / maxHealth;
         healthText.text = currentHealth.ToString();
+    }
+
+     void Die()
+    {
+        ScoreManager.instance.AddKil();
+        Destroy(gameObject);
     }
 
     

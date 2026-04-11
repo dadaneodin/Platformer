@@ -30,14 +30,13 @@ public class ScoreManager : MonoBehaviour
     public void AddKil()
     {
         kills += 1;
-        score += 100;
+        // score += 100;
         UpdateUI();
     }
 
     private void UpdateUI()
     {
-        if(scoreText != null)
-            scoreText.text = "Очки: " + score.ToString();
+        scoreText.text = "Очки: " + score.ToString();
             
         if(killText != null)
             killText.text = "Убийств: " + kills;

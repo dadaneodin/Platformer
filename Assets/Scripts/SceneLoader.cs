@@ -22,4 +22,15 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene);
         Time.timeScale = 1f;
     }
+
+    public void FreezeGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void UnFreezeGame()
+    {
+        Time.timeScale = 1f;
+    }
+
 }
