@@ -72,7 +72,8 @@ public class Health : MonoBehaviour
     }
 
      void Die()
-    {
+    {   
+        // if(gameObject.CompareTag("Damageable"))
         ScoreManager.instance.AddKil();
         Destroy(gameObject);
     }
