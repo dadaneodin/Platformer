@@ -5,14 +5,14 @@ public class ParallaxController : MonoBehaviour
     [SerializeField] private Transform[] layers;
     [SerializeField] private float[] coeff;
 
-    private int LayerConst;
+    private int LayerCount;
     void Start()
     {
-        LayerConst = layers.Length;
+        LayerCount = layers.Length;
     }
     void Update()
     {
-        for(int i = 0; i < LayerConst; i++)
+        for(int i = 0; i < LayerCount; i++)
         {
             layers[i].position = transform.position * coeff[i];
         }

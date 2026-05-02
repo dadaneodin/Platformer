@@ -46,15 +46,18 @@ TagManager:
   - name: Ground
     uniqueID: 359466887
     locked: 0
-  - name: Objects
-    uniqueID: 325505741
-    locked: 0
   - name: Character
     uniqueID: 2877586971
+    locked: 0
+  - name: Objects
+    uniqueID: 325505741
     locked: 0
   - name: Background
     uniqueID: 705371955
     locked: 0
   - name: Canvas
     uniqueID: 714990399
+    locked: 0
+  - name: Front
+    uniqueID: 2744097903
     locked: 0
