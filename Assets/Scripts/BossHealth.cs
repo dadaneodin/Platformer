@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro; 
 
-public class Health : MonoBehaviour
+public class BossHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private float currentHealth;
@@ -12,6 +12,9 @@ public class Health : MonoBehaviour
     [SerializeField] public TMP_Text healthText;
     [SerializeField] private GameObject deathPanel;
 
+    // ==========================================
+    // НАГРАДА ПОСЛЕ СМЕРТИ БОССА
+    // ==========================================
     [Header("Объекты после смерти босса")]
     [SerializeField] private GameObject firstRewardObject;
     [SerializeField] private GameObject secondRewardObject;
@@ -58,7 +61,8 @@ public class Health : MonoBehaviour
 
         if (secondRewardObject != null)
             secondRewardObject.SetActive(true);
-            
+
+
          if(person != null)
             Destroy(person);
 
@@ -78,16 +82,20 @@ public class Health : MonoBehaviour
 
     void UpdateHealth(float currentHealth, float maxHealth)
     {
-        healthBarImage.fillAmount = currentHealth / maxHealth;
-        healthText.text = currentHealth.ToString();
+        // Добавим проверку, чтобы не было ошибок, если бар не привязан
+        if (healthBarImage != null)
+            healthBarImage.fillAmount = currentHealth / maxHealth;
+            
+        if (healthText != null)
+            healthText.text = currentHealth.ToString();
     }
 
      void Die()
     {   
         // if(gameObject.CompareTag("Damageable"))
-        ScoreManager.instance.AddKil();
+        if (ScoreManager.instance != null) // проверка на всякий случай
+            ScoreManager.instance.AddKil();
+            
         Destroy(gameObject);
     }
-
-    
 }
