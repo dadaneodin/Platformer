@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
+
     public static ScoreManager instance;
     public TMP_Text scoreText;
     public TMP_Text killText;

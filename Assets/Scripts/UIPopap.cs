@@ -41,6 +41,6 @@ public class UIPopap : MonoBehaviour
         CalculateFinalScore();
         popupPanel.SetActive(true);
     }
-
     
+
 }
